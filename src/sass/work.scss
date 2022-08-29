@@ -2,10 +2,11 @@
     width: 100vw;
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    gap:0;
 }
 .work-block {
     position: relative;
-    border: 3px solid #FFFFFF;
+    border: 1px solid red;
 }
 .work-block__image {
     width: 100%;
@@ -25,6 +26,14 @@
     z-index: 2;
     opacity: 0;
     transition: all 0.3s ease 0s;
+    &:hover{
+    opacity: 1;
+    background: rgba(255, 67, 67, 0.8);
+    }
+    &:active{
+    opacity: 1;
+    background: rgba(185, 12, 12, 0.8);
+    }
 }
 .work-block__content-title {
     text-transform: uppercase;
@@ -39,14 +48,6 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-}
-.work-block__content:hover {
-    opacity: 1;
-    background: rgba(255, 67, 67, 0.8);
-}
-.work-block__content:active {
-    opacity: 1;
-    background: rgba(185, 12, 12, 0.8);
 }
 @media (max-width:1024px) {
     .work-block__content-title {
