@@ -3,6 +3,7 @@
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(4, 1fr);
 }
+
 .work-block {
     position: relative;
     border: 1px solid #FFFFFF;
